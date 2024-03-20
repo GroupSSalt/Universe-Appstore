@@ -22,7 +22,7 @@ function installClicker() {
     let deskpad = document.getElementById('deskpad');
     deskpad.innerHTML += `
         <button class="padIcon" onClick="openApp('clicker')">
-            <img src="systemH/appstore/clicker/clicker.png" class="padImage">
+            <img src="https://raw.githubusercontent.com/GroupSSalt/Universe-Appstore/main/clicker/clicker.png" class="padImage">
         </button>
     `;
 
@@ -49,7 +49,7 @@ function installClicker() {
 
 	appsdesk += `
 		<button class="padIcon" onClick="openApp('clicker')">
-            <img src="systemH/appstore/clicker/clicker.png" class="padImage">
+            <img src="https://raw.githubusercontent.com/GroupSSalt/Universe-Appstore/main/clicker/clicker.png" class="padImage">
         </button>
 	`;
 

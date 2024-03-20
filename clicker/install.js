@@ -26,7 +26,7 @@ function installClicker() {
         </button>
     `;
 
-    appscripts.push("systemH/appstore/clicker/program/clicker.js");
+    appscripts.push("https://github.com/GroupSSalt/Universe-Appstore/raw/main/clicker/program/clicker.js");
 
 	appcontent += `
 		<div class="window" id="clicker">
@@ -58,7 +58,7 @@ function installClicker() {
 	saveApps();
 
     let script = document.createElement('script');
-    script.src = "systemH/appstore/clicker/program/clicker.js";
+    script.src = "https://github.com/GroupSSalt/Universe-Appstore/raw/main/clicker/program/clicker.js
     document.body.appendChild(script);
 
     document.getElementById('installClicker').innerHTML = "Installed";

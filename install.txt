@@ -1,0 +1,62 @@
+function () {
+    let EXapps = document.getElementById('EXapps');
+    EXapps.innerHTML += `
+		<div class="window" id="">
+			<div class="tabs">
+				<button class="tabaccIcon" onClick="closeApp('')"><img src="systemH/accessibility/close.png"></button>
+				<button class="tabaccIcon" onClick="miniApp('')"><img src="systemH/accessibility/minimize.png"></button>
+			</div>
+		</div>
+    `;
+
+    let deskpad = document.getElementById('deskpad');
+    deskpad.innerHTML += `
+		<button class="padIcon" onClick="openApp('')">
+			<img src="systemH/appstore/" class="padImage">
+		</button>
+    `;
+
+    appstyles.push("systemH/appstore/");
+	appscripts.push("systemH/appstore/");
+
+    appcontent += `
+		<div class="window" id="">
+			<div class="tabs">
+				<button class="tabaccIcon" onClick="closeApp('')"><img src="systemH/accessibility/close.png"></button>
+				<button class="tabaccIcon" onClick="miniApp('')"><img src="systemH/accessibility/minimize.png"></button>
+			</div>
+		</div>
+    `;
+
+    appsdesk += `
+		<button class="padIcon" onClick="openApp('')">
+			<img src="systemH/appstore/" class="padImage">
+		</button>
+    `;
+
+    installedApps.push("");
+
+	var script = document.createElement('script');
+	script.src = "systemH/appstore/";
+	document.head.appendChild(script);
+
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "systemH/appstore/";
+    document.head.appendChild(link);
+
+    saveApps();
+	toggleTheme();
+	toggleTheme();
+	quickLoadAdder('systemH/appstore/', '');
+
+        var preload = document.createElement('link');
+        preload.href = 'systemH/appstore/';
+        preload.rel = 'preload';
+        preload.as = '';
+        document.head.appendChild(preload);
+
+    document.getElementById('').innerHTML = "Installed";
+    document.getElementById('').disabled = true;
+}

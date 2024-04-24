@@ -1,0 +1,29 @@
+.clicker-button {
+	padding: 5px;
+	font-weight: bold;
+	font-size: large;
+	margin: 5px;
+	border-radius: 5px;
+	color: white;
+	background-color: lime;
+	border: 4px solid lime;
+	cursor: url('../../../cursors/hand.png'), hand;
+}
+
+.clicker-button:hover {
+	padding: 5px;
+	font-weight: bold;
+	font-size: large;
+	margin: 5px;
+	border-radius: 5px;
+	color: white;
+	background-color: green;
+	border: 4px solid green;
+	cursor: url('../../../cursors/hand.png'), hand;
+}
+
+.clicker-fn-button {
+	background-color: lightgray;
+	border: 4px solid lightgray;
+	border-radius: 5px;
+}

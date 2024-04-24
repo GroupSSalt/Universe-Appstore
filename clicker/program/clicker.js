@@ -39,7 +39,40 @@ function clickerUpgrade3() {
 		clickerMoney -= up3cost;
 		up3cost *= 2;
 		setInterval(clickerClicked, 1000);
+		displayOutput();
 	}
+}
+
+function saveClicker() {
+	localStorage.setItem('clickerMoney', clickerMoney);
+	localStorage.setItem('moneyAdd', moneyAdd);
+	localStorage.setItem('up1cost', up1cost);
+	localStorage.setItem('up2cost', up2cost);
+
+	let variables = [
+		'clickerMoney',
+		'moneyAdd',
+		'up1cost',
+		'up2cost'
+	];
+
+	variables.forEach(function(variable) {
+		if (!appFiles.includes(variable)) {
+			appFiles.push(variable);
+			saveAppFiles();
+		}
+	});
+	displayOutput();
+	noti('Saved');
+}
+
+function loadClicker() {
+	clickerMoney = parseInt(localStorage.getItem('clickerMoney')) || 0;
+	moneyAdd = parseInt(localStorage.getItem('moneyAdd')) || 1;
+	up1cost = parseInt(localStorage.getItem('up1cost')) || 50;
+	up2cost = parseInt(localStorage.getItem('up2cost')) || 1000;
+	displayOutput();
+	noti('Loaded');
 }
 
 displayOutput();
